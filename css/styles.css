@@ -1,0 +1,547 @@
+@font-face {
+	font-family: 'Scriptina';
+	src: url('../fonts/scriptina.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Alegreya';
+	src: url('../fonts/AlegreyaSC-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display Bold';
+	src: url('../fonts/Playfair Display Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/proximanova-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+header {
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/background-main.png) no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+a, a:hover {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li {
+	display: inline-block;
+	font-family: 'Alegreya', Times New Roman, serif;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+ul li:after {
+	content: '~';
+	display: inline-block;
+	padding: 0 32px;
+	cursor: default;
+}
+
+ul li:after:last-child {
+	display: none;
+}
+
+h1 {
+	margin-top: 188px;
+	margin-bottom: 32px;
+	font-family: 'Playfair Display Bold', Times New Roman, serif;
+	font-size: 92px;
+}
+
+h2, h3 {
+	margin: 0;
+	font-family: 'Alegreya', Times New Roman, serif;
+	font-weight: bold;
+	font-size: 44px;
+	color: #56534c;
+}
+
+h3 {
+	font-size: 24px;
+	text-transform: capitalize;
+}
+
+button {
+	width: 198px;
+	height: 48px;
+	color: #fff;
+	font-family: 'Alegreya', Times New Roman, serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	border: 1px dashed #9e9c93;
+	background: rgba(135, 132, 127, .6);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.logo, .navigation, .social {
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+.logo a {
+	display: inline-block;
+	font-family: 'Scriptina', sans-serif;
+	font-size: 22px;
+}
+
+.social {
+	text-align: right;
+}
+
+.social a{
+	display: inline-block;
+	margin-left: 28px;
+}
+
+.title-caption {
+	margin: 54px 0;
+	font-family: 'ProximaNova', Times New Roman, serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+.art-fromchef {
+	width: 100vw;
+	height: 100vh;
+	padding-top: 80px;
+	box-sizing: border-box;
+	background: url(../img/texture.png);
+}
+
+.art-ofcakes {
+	text-align: center;
+	font-family: 'Alegreya', Times New Roman, serif;
+}
+
+.underheader {
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #aa8669;
+}
+
+.art-ofcakes_text {
+	margin-top: 45px;
+	margin-bottom: 30px;
+	font-family: 'ProximaNova', Times New Roman, serif;
+}
+
+.art-ofcakes_chef {
+	display: flex;
+	justify-content: space-around;
+	margin: 18px 0 32px;
+}
+
+.art-ofcakes_chefname {
+	/*display: inline-block;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	width: 110px;
+	height: 58px;
+	font-size: 24px;
+	color: #56534c;
+	border-top: 1px solid #d7d5ca;
+	border-bottom: 1px solid #d7d5ca;
+}
+
+.art-ofcakes_cheficon {
+	/*display: inline-block;*/
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.art-ofcakes_cite {
+	position: relative;
+	display: inline-block;
+	width: 295px;
+	margin: 0 auto;
+	font-family: 'Scriptina', serif;
+	font-size: 32px;
+	color: #a47d5e;
+}
+
+.art-ofcakes_cite:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 23px;
+	height: 14px;
+	background: url(../img/cite-leftmarker.png) no-repeat;
+}
+
+.art-ofcakes_cite:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: -40px;
+	width: 23px;
+	height: 14px;
+	background: url(../img/cite-rightmarker.png) no-repeat;
+}
+
+.art-fromchef_list {
+	position: relative;
+}
+
+.art-fromchef_tastes {
+	position: absolute;
+	top: 128px;
+	left: 153px;
+	z-index: 10;
+}
+
+.art-fromchef_item {
+	display: inline-block;
+	width: 295px;
+	height: 250px;
+	/*overflow: hidden;*/
+}
+/*
+.art-fromchef-item-border {
+	height: 228px;
+	width: 272px;
+	border: 6px solid #fff;
+}*/
+
+.dish {
+	width: 100vw;
+	height: 100vh;
+	padding-top: 129px;
+	box-sizing: border-box;
+	background: url(../img/background-table.png) no-repeat;
+	background-size: cover;
+}
+
+.pancake {
+	width: 965px;
+	height: 512px;
+	background: url(../img/background-pancake.png) no-repeat right center;
+	background-size: cover;
+	box-shadow: 0 0 25px 35px rgba(197, 188, 179, .6);
+}
+
+.pancake-picture {
+	display: inline-block;
+	width: 44%;
+	overflow: hidden;
+}
+
+.pancake-content {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 80px 66px 37px;
+	box-sizing: border-box;
+	width: 55%;
+}
+
+.pancake-ready {
+	position: absolute;
+	top: -44px;
+	right: -105px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 35px 0;
+	box-sizing: border-box;
+	width: 200px;
+	height: 200px;
+	font-weight: bold;
+	text-align: center;
+	background: url(../img/garden.png) no-repeat;
+}
+
+.pancake-ready_header {
+	color: #aa8669;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.pancake-ready_number {
+	color: #dfc691;
+	font-size: 65px;
+	line-height: 43px;
+}
+
+.pancake-ready_minutes {
+	color: #979285;
+	font-size: 14px;
+}
+
+.pancake-text p {
+	padding: 56px 0 36px;
+	font-family: 'ProximaNova', Times New Roman, serif;
+	font-size: 14px;
+	line-height: 25px;
+	color: #56534c;
+}
+
+.pancake-slider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pancake-slider_arrow {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 2px solid #5a5750;
+	background: transparent;
+	color: #5a5750;
+	font-size: 23px;
+	outline: none;
+}
+
+.pancake-slide {
+	display: inline-block;
+}
+
+.breakfast {
+	width: 100vw;
+	height: 100vh;
+	padding-top: 89px;
+	box-sizing: border-box;
+	background: url(../img/background-breakfast.png) no-repeat;
+	background-size: cover;
+	font-family: 'Alegreya', Times New Roman, serif;
+	text-align: center;
+}
+
+.breakfast h2 {
+	color: #f5f5f5;
+	font-size: 46px;
+	text-transform: capitalize;
+}
+
+.breakfast .underheader {
+	color: #be9e8d;
+}
+
+.breakfast-list {
+	margin-top: 63px;
+}
+
+.breakfast-item h3 {
+	color: #f5f5f5;
+	font-size: 25px;
+}
+
+.breakfast-item p {
+	margin: 0;
+	font-family: 'ProximaNova', Times New Roman, serif;
+	font-size: 14px;
+	color: #9a9a9a;
+}
+
+.breakfast-item span {
+	display: block;
+	font-size: 28px;
+	color: #dfc691;
+}
+
+.breakfast-escape {
+	padding-top: 35px;
+	box-sizing: border-box;
+	width: 442px;
+	background: url(../img/back-escape.png) no-repeat;
+}
+
+.breakfast-escape img {
+	width: 100%;
+}
+
+.breakfast-escape h3 {
+	padding-top: 23px;
+}
+
+.breakfast-escape p {
+	padding: 29px 8px;
+	line-height: 28px;
+}
+
+.breakfast-escape a {
+	margin-top: 52px;
+	padding: 18px 69px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #a47d5e;
+	border: 2px solid #9e9c93;
+}
+
+.breakfast-escape a:hover {
+	background: #c8a593;
+	color: #fff;
+	transition: .4s ease-out;
+}
+
+.sandwich {
+	padding: 8px 0 55px;
+	background: #f3f1e9;
+	text-align: center;
+}
+
+.ingredients-item {
+	margin-bottom: 60px;
+}
+
+.sandwich-recipe {
+	position: relative;
+	margin-top: 90px;
+	width: 815px;
+	height: 498px;
+	border: 11px solid #fff;
+	/*overflow: hidden;*/
+}
+
+.sandwich-recipe img {
+	width: 100%;
+}
+
+.sandwich-recipe_timer {
+	position: absolute;
+	top: -34px;
+	right: 0;
+}
+
+.sandwich-recipe_time {
+	padding-top: 47px;
+	box-sizing: border-box;
+	width: 180px;
+	height: 180px;
+	background: rgba(255, 255, 255, .8);
+}
+
+.sandwich-recipe_time span {
+	display: block;
+}
+
+.sandwich-recipe_header {
+	font-size: 19px;
+	font-weight: bold;
+	color: #a47d5e;
+	text-transform: uppercase;
+}
+
+.sandwich-recipe_number {
+	font-size: 35px;
+	font-weight: bold;
+	color: #56534c;
+}
+
+.sandwich-recipe_minutes {
+	font-size: 15px;
+	font-weight: bold;
+	color: #979285;
+}
+
+.recipe-ready {
+	padding-top: 35px;
+	box-sizing: border-box;
+	width: 180px;
+	height: 180px;
+	background: url(../img/garden.png) no-repeat;
+}
+
+.recipe-ready .sandwich-recipe_header {
+	font-size: 24px;
+}
+
+.recipe-ready .sandwich-recipe_number {
+	padding-top: 10px;
+	box-sizing: border-box;
+	font-size: 54px;
+	line-height: 54px;
+	color: #dfc691;
+}
+
+.full-recipe {
+	position: absolute;
+	bottom: -28px;
+	left: -32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 169px;
+	height: 58px;
+	background: #fff;
+	border: 2px dashed #dfc691;
+	color: #dfc691;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.full-recipe:hover {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background: #dfc691;
+}
+
+footer {
+	background: #f3f1e9;
+}
+
+.navigation-footer ul {
+	text-align: center;
+	margin-bottom: 70px;
+	padding: 22px 0;
+	border-top: 1px solid #c2beba;
+	border-bottom: 1px solid #c2beba;
+}
+
+.navigation-footer ul li {
+	color: #42403c;
+}
+
+.navigation-footer ul li:last-child:after {
+	display: none;
+}
+
+footer .logo {
+	vertical-align: top;
+	text-align: center;
+}
+
+footer .logo a {
+	color: #6b6861;
+}
