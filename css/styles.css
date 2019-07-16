@@ -54,7 +54,7 @@ ul {
 
 ul li {
 	display: inline-block;
-	font-family: 'Alegreya', Times New Roman, serif;
+	font-family: 'Alegreya', 'Times New Roman', serif;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -73,13 +73,13 @@ ul li:after:last-child {
 h1 {
 	margin-top: 188px;
 	margin-bottom: 32px;
-	font-family: 'Playfair Display Bold', Times New Roman, serif;
+	font-family: 'Playfair Display Bold', 'Times New Roman', serif;
 	font-size: 92px;
 }
 
 h2, h3 {
 	margin: 0;
-	font-family: 'Alegreya', Times New Roman, serif;
+	font-family: 'Alegreya', 'Times New Roman', serif;
 	font-weight: bold;
 	font-size: 44px;
 	color: #56534c;
@@ -94,7 +94,7 @@ button {
 	width: 198px;
 	height: 48px;
 	color: #fff;
-	font-family: 'Alegreya', Times New Roman, serif;
+	font-family: 'Alegreya', 'Times New Roman', serif;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -129,7 +129,7 @@ button:hover {
 
 .title-caption {
 	margin: 54px 0;
-	font-family: 'ProximaNova', Times New Roman, serif;
+	font-family: 'ProximaNova', 'Times New Roman', serif;
 	font-size: 24px;
 	text-align: center;
 }
@@ -144,7 +144,7 @@ button:hover {
 
 .art-ofcakes {
 	text-align: center;
-	font-family: 'Alegreya', Times New Roman, serif;
+	font-family: 'Alegreya', 'Times New Roman', serif;
 }
 
 .underheader {
@@ -157,7 +157,7 @@ button:hover {
 .art-ofcakes_text {
 	margin-top: 45px;
 	margin-bottom: 30px;
-	font-family: 'ProximaNova', Times New Roman, serif;
+	font-family: 'ProximaNova', 'Times New Roman', serif;
 }
 
 .art-ofcakes_chef {
@@ -167,7 +167,6 @@ button:hover {
 }
 
 .art-ofcakes_chefname {
-	/*display: inline-block;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -181,7 +180,6 @@ button:hover {
 }
 
 .art-ofcakes_cheficon {
-	/*display: inline-block;*/
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -232,14 +230,7 @@ button:hover {
 	display: inline-block;
 	width: 295px;
 	height: 250px;
-	/*overflow: hidden;*/
 }
-/*
-.art-fromchef-item-border {
-	height: 228px;
-	width: 272px;
-	border: 6px solid #fff;
-}*/
 
 .dish {
 	width: 100vw;
@@ -308,7 +299,7 @@ button:hover {
 
 .pancake-text p {
 	padding: 56px 0 36px;
-	font-family: 'ProximaNova', Times New Roman, serif;
+	font-family: 'ProximaNova', 'Times New Roman', serif;
 	font-size: 14px;
 	line-height: 25px;
 	color: #56534c;
@@ -343,7 +334,7 @@ button:hover {
 	box-sizing: border-box;
 	background: url(../img/background-breakfast.png) no-repeat;
 	background-size: cover;
-	font-family: 'Alegreya', Times New Roman, serif;
+	font-family: 'Alegreya', 'Times New Roman', serif;
 	text-align: center;
 }
 
@@ -368,7 +359,7 @@ button:hover {
 
 .breakfast-item p {
 	margin: 0;
-	font-family: 'ProximaNova', Times New Roman, serif;
+	font-family: 'ProximaNova', 'Times New Roman', serif;
 	font-size: 14px;
 	color: #9a9a9a;
 }
@@ -430,7 +421,6 @@ button:hover {
 	width: 815px;
 	height: 498px;
 	border: 11px solid #fff;
-	/*overflow: hidden;*/
 }
 
 .sandwich-recipe img {
